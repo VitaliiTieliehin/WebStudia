@@ -6,106 +6,121 @@
     <title>WebStudia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<!--  header -->
 <header>
+<div class="heder container">
     <div>
-        <a href="">WebStudia</a>
+        <a href="" class="logo"><span class="logo-top">Web</span>Studia</a>
     </div>
-    <nav>
-            <ul>
-                <li><a href="">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+    <nav class="menu-nav">
+            <ul class="menu-list list">
+                <li class="menu-item">
+                    <a href="" class="menu-link current">Студия</a>
+                </li>
+                <li class="menu-item">
+                    <a href="./portfolio.html" class="menu-link">Портфолио</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Контакты</a>
+                </li>
             </ul>
     </nav>
-    <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <ul class="contact list">
+        <li class="contact-item">
+            <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
+        <li class="contact-item">
+            <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a></li>
     </ul>
+</div>
 </header>
-
+<!-- Main -->
 <main>
-    <!-- #region header -->
-    <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+    <!-- Hero -->
+    <section class="hero overlay">
+        <div class="container">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <button class="hero-btn pointer" type="button">Заказать услугу</button>
+        </div>
     </section>
-    <!-- #endregion -->
-    
-    <!-- Features -->
 
-    <section>
-        <ul>
-            <li>
-                <h2>Внимание к деталям</h2>
-                <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+    <!-- Features -->
+    <section class="features container">
+        <h2 class="visually-hidden">особенности</h2>
+        <ul class="features-list list">
+            <li class="features-item">
+                <h2 class="features-title">Внимание к деталям</h2>
+                <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li>
-                <h2>Пунктуальность</h2>
-                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+            <li class="features-item">
+                <h2 class="features-title">Пунктуальность</h2>
+                <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li>
-                <h2>Планирование</h2>
-                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+            <li class="features-item">
+                <h2 class="features-title">Планирование</h2>
+                <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li>
-                <h2>Современные технологии</h2>
-                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <li class="features-item">
+                <h2 class="features-title">Современные технологии</h2>
+                <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
     </section>
     <!-- work -->
-    <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
-            <li><img src="./images/features/box1.jpg" alt="набор текста на клавиатуре"></li>
-            <li><img src="./images/features/box2.jpg" alt="работа с планшетом и ноутбуком"></li>
-            <li><img src="./images/features/box3.jpg" alt="игра на планшете"></li>
+    <section class="work">
+        <div class="container">
+            <h2 class="work-title">Чем мы занимаемся</h2>
+        <ul class="work-list list">
+            <li class="example"><img src="./images/features/box1.jpg" alt="набор текста на клавиатуре" width="370"></li>
+            <li class="example"><img src="./images/features/box2.jpg" alt="работа с планшетом и ноутбуком" width="370"></li>
+            <li class="example"><img src="./images/features/box3.jpg" alt="игра на планшете" width="370"></li>
         </ul>
+        </div>
     </section>
 
     <!-- Team -->
-    
-    <section>
-        <h2>Наша команда</h2>
-        <ul>
-            <li>
-            <img src="./images/team/member1.jpg" alt="Игорь Демьяненко">
-            <h2>Игорь Демьяненко</h2>
-            <p>Product Designer</p>
+    <section class="team">
+        <div class="container">
+            <h2 class="team-title">Наша команда</h2>
+        <ul class="team-list list">
+            <li class="team-member">
+            <img class="team-images" src="./images/team/member1.jpg" alt="Игорь Демьяненко">
+            <h3 class="member-title">Игорь Демьяненко</h3>
+            <p class="member-description">Product Designer</p>
     </li>
-            <li>
-            <img src="./images/team/member2.jpg" alt="Ольга Репина">
-            <h2>Ольга Репина</h2>
-            <p>Frontend Developer</p>
+            <li class="team-member">
+            <img class="team-images" src="./images/team/member2.jpg" alt="Ольга Репина">
+            <h3 class="member-title">Ольга Репина</h3>
+            <p class="member-description">Frontend Developer</p>
     </li>
-            <li>
-            <img src="./images/team/member3.jpg" alt="Николай Тарасов">
-            <h2>Николай Тарасов</h2>
-            <p>Marketing</p>
+            <li class="team-member">
+            <img class="team-images" src="./images/team/member3.jpg" alt="Николай Тарасов">
+            <h3 class="member-title">Николай Тарасов</h3>
+            <p class="member-description">Marketing</p>
     </li>
-            <li>
-            <img src="./images/team/member4.jpg" alt="">
-            <h2>Михаил Ермаков</h2>
-            <p>UI Designer</p>
+            <li class="team-member">
+            <img class="team-images" src="./images/team/member4.jpg" alt="">
+            <h3 class="member-title">Михаил Ермаков</h3>
+            <p class="member-description">UI Designer</p>
     </li>
         </ul>
+        </div>
     </section>
 </main>
-<footer>
-    <div>
+<footer class="footer-section">
+    <div class="container">
         <div>
-            <a href="">WebStudia</a>
+            <a href="./index.html" class="logo-footer"><span class="logo-bottom">Web</span>Studia</a>
         </div>
         <address>
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
         </address>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="contact-footer list">
+            <li class="footer-link"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="footer-link"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </div>
 </footer>
