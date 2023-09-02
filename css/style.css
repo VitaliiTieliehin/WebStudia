@@ -1,3 +1,4 @@
+/* #region main */
 body{
     background-color: var(--primeri-white-color);
     color: var(--text-color);
@@ -73,16 +74,14 @@ a {text-decoration: none;
     clip-path: inset(50%);
     margin: -1px;
 }
-
+/* #endregion */
 /* #region header */
 
 .heder{
     display: flex;
     align-items: center;
 }
-.main-nav{
 
-}
 .logo{
     color:var(--title-text-color);
     font-family: Raleway;
@@ -126,17 +125,15 @@ a {text-decoration: none;
     display: flex;
     margin-left: auto;
 }
-.contact-item{
-    padding: 32px 0;
-}
+
 .contact-link{
-color: var(--text-color);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    padding: 32px 0;
 }
 .contact-link:hover,
 .contact-link:focus{
@@ -144,6 +141,19 @@ letter-spacing: 0.28px;
 }
 .contact-item+.contact-item{
     margin-left: 50px;
+}
+.contact-icon{
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px;
+
+}
+.contact-icon-tel{
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
 }
 /* #endregion */
 /* #region hero */
@@ -161,7 +171,7 @@ letter-spacing: 0.28px;
     background-image:linear-gradient(   
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(/images/hero.jpg);
+        url(/WebStudia/images/hero.jpg);
         background-repeat: no-repeat;
         background-position: center;
 }
@@ -204,8 +214,27 @@ letter-spacing: 0.28px;
 .features-item{
     width: 270px;
 }
+.features-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+.features-icon{
+    width: 70px;
+    height: 70px;
+}
+
+
 .features-item +.features-item{
     margin-left: 30px;
+}
+.features-icon{
+    background-color: #F5F4FA;
 }
 .features-title{    
     color: var(--title-text-color);    
@@ -273,7 +302,7 @@ letter-spacing: 0.28px;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 .team-member{
     border-radius: 0px 0px 4px 4px;
@@ -289,7 +318,7 @@ letter-spacing: 0.28px;
 }
 /* #endregion */
 /* #region footer */
-.footer-section{
+.footer{
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: auto;
@@ -337,15 +366,54 @@ letter-spacing: 0.28px;
     margin-top: 9px;
 }
 /* #endregion */
+/* #region footer social */
+.connect{
+    margin-left: 70px;
+}
+.connect-title{
+    color: var(--primeri-white-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.connect-list{
+    display: flex;
+}
+.connect-link:hover,
+.connect-link:focus{
+    background-color: var(--akcent-color);
+}
+.connect-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:#44454E;
+}
+.connect-icon{
+    width: 20px;
+    height: 20px;
+    fill:var(--primeri-white-color);
+}
+.connect-item:not(:first-child){
+    margin-left: 10px;
+}
+.footer-section{
+    display: flex;
+    align-items: baseline;
+}
+/* #endregion */
 /* #region filtr */
 .filtr{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-.filtr-item{
-    
-}
+
 .filtr-item+.filtr-item{
     margin-left: 8px;
 }
@@ -423,5 +491,33 @@ letter-spacing: 0.28px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+}
+/* #endregion */
+/* #region social */
+.social-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+.social-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color:  #AFB1B8;
+    border-radius: 50%;
+
+}
+.social-icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.social-item:focus,
+.social-item:hover{
+    background-color: var(--akcent-color);
+    color: var(--primeri-white-color);
 }
 /* #endregion */
