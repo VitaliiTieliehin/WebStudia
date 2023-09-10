@@ -682,6 +682,7 @@ textarea{
     align-items: center;
     fill: var(--title-text-color);
     cursor: pointer;
+    outline: none;
 }
 .close-btn:hover,
 .close-btn:focus{
@@ -792,6 +793,7 @@ textarea{
     background-color: var(--akcent-color);
     border: none;
 }
+
 .form-btn{
     display: block;
     width: 200px;
